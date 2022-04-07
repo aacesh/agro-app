@@ -1,0 +1,27 @@
+{
+    "host": "LOCALHOST",
+    "db": {
+        "pg": {
+            "port": "POSTGRES_PORT",
+            "user": "POSTGRES_USER",
+            "password": "POSTGRES_PASSWORD",
+            "host": "host",
+            "database": "POSTGRES_DB"
+        }
+    },
+    "jwt": {
+        "access": {
+            "key": "JWT_ACC_SECRET_KEY"
+        },
+
+        "refresh": {
+            "key": "JWT_REF_SECRET_KEY",
+            "payload": {
+                "secret": "JWT_RANDOM_KEY"
+            }
+        },
+        "accessKey": "JWT_ACC_SECRET_KEY",
+        "refreshKey": "JWT_REF_SECRET_KEY",
+        "randomKey": "JWT_RANDOM_KEY"
+    }
+}

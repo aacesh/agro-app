@@ -1,0 +1,25 @@
+{
+    "port": 3000,
+    "db": {
+        "init_db": true,
+        "pg": {
+            "init_immediate": true,
+            "host": "0.0.0.0"
+        }
+    },
+    "jwt": {
+        "access": {
+            "options": {
+                 "expiresIn": "5min"
+            }
+        },
+        "refresh": {
+            "options": {
+                 "expiresIn": "1d"
+            }
+        },
+        "accessKey": "JWT_ACC_SECRET_KEY",
+        "refreshKey": "JWT_REF_SECRET_KEY",
+        "randomKey": "JWT_RANDOM_KEY"
+    }
+}
